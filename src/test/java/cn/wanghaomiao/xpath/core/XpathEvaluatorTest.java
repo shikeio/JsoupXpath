@@ -1,6 +1,5 @@
 package cn.wanghaomiao.xpath.core;
 
-import cn.wanghaomiao.xpath.model.Node;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Before;
@@ -9,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.util.List;
+
+import cn.wanghaomiao.xpath.model.Node;
 
 /**
  * XpathEvaluator Tester.
@@ -35,8 +36,14 @@ public class XpathEvaluatorTest {
     }
 
     @Test
-    public void testXpathNodeTree(){
-        List<Node> nodes = underTest.getXpathNodeTree("//meta[@charset!~'xx']/@href");
+    public void testXpathNodeTree() {
+        List<Node> nodes = underTest.getXpathNodeTree("//meta[@charset!~'xx']/@href/");
+        System.out.println(nodes);
+    }
+
+    @Test
+    public void testIssue14() throws Exception {
+        List<Node> nodes = underTest.getXpathNodeTree("//table/tbody/tr[2]/");
         System.out.println(nodes);
     }
 }

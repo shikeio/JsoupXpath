@@ -14,12 +14,13 @@ package cn.wanghaomiao.xpath.exception;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
 /**
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
  * @since 14-3-19
  */
 public class XpathSyntaxErrorException extends Exception {
-    public XpathSyntaxErrorException(String msg){
+    public XpathSyntaxErrorException(String msg) {
         super(msg);
     }
 }

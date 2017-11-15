@@ -14,10 +14,12 @@ package cn.wanghaomiao.xpath.model;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
 import cn.wanghaomiao.xpath.util.ScopeEm;
 
 /**
  * xpath语法链的一个基本节点
+ *
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
  */
 public class Node {

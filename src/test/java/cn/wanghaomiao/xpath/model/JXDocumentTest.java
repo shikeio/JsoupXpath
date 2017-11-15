@@ -1,8 +1,8 @@
 package cn.wanghaomiao.xpath.model;
 
-import cn.wanghaomiao.xpath.exception.XpathSyntaxErrorException;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
+
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -14,6 +14,8 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.modules.junit4.PowerMockRunnerDelegate;
 
 import java.util.List;
+
+import cn.wanghaomiao.xpath.exception.XpathSyntaxErrorException;
 
 /**
  * JXDocument Tester.
@@ -63,13 +65,13 @@ public class JXDocumentTest {
 
     @Test
     @DataProvider(value = {
-            "//a/@href",
-            "//div[@class='paginator']/span[@class='next']/a/@href",
-            "//ul[@class='subject-list']/li[position()<3]/div/h2/allText()",
-            "//ul[@class='subject-list']/li[first()]/div/h2/allText()",
-            "//ul[@class='subject-list']/li[./div/div/span[@class='pl']/num()>900]/div/h2/allText()", //查找评论大于1000的条目（当然只是为了演示复杂xpath了，谓语中可以各种嵌套，这样才能测试的更全面）
-            "//ul[@class='subject-list']/li[self::li/div/div/span[@class='pl']/num()>900]/div/h2/allText()",
-            "//*[@id='content']/div/div[1]/ul/li[14]/div[2]/h2/a/text()" //chrome拷贝
+        "//a/@href",
+        "//div[@class='paginator']/span[@class='next']/a/@href",
+        "//ul[@class='subject-list']/li[position()<3]/div/h2/allText()",
+        "//ul[@class='subject-list']/li[first()]/div/h2/allText()",
+        "//ul[@class='subject-list']/li[./div/div/span[@class='pl']/num()>900]/div/h2/allText()", //查找评论大于1000的条目（当然只是为了演示复杂xpath了，谓语中可以各种嵌套，这样才能测试的更全面）
+        "//ul[@class='subject-list']/li[self::li/div/div/span[@class='pl']/num()>900]/div/h2/allText()",
+        "//*[@id='content']/div/div[1]/ul/li[14]/div[2]/h2/a/text()" //chrome拷贝
     })
     public void testXpath(String xpath) throws XpathSyntaxErrorException {
         System.out.println("current xpath:" + xpath);
@@ -85,7 +87,7 @@ public class JXDocumentTest {
 
     @Test
     @DataProvider(value = {
-            "//ul[@class='subject-list']/li"
+        "//ul[@class='subject-list']/li"
     })
     public void testJXNode(String xpath) throws XpathSyntaxErrorException {
         System.out.println("current xpath:" + xpath);
@@ -99,7 +101,7 @@ public class JXDocumentTest {
 
     @Test
     @DataProvider(value = {
-            "//ul[@class='subject-list']"
+        "//ul[@class='subject-list']"
     })
     public void testRecursionNode(String xpath) throws XpathSyntaxErrorException {
         System.out.println("current xpath:" + xpath);

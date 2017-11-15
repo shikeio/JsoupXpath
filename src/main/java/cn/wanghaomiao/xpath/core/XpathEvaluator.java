@@ -15,13 +15,6 @@ package cn.wanghaomiao.xpath.core;
    limitations under the License.
  */
 
-import cn.wanghaomiao.xpath.exception.NoSuchAxisException;
-import cn.wanghaomiao.xpath.exception.NoSuchFunctionException;
-import cn.wanghaomiao.xpath.model.JXNode;
-import cn.wanghaomiao.xpath.model.Node;
-import cn.wanghaomiao.xpath.model.Predicate;
-import cn.wanghaomiao.xpath.util.CommonUtil;
-import cn.wanghaomiao.xpath.util.ScopeEm;
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -31,6 +24,14 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import cn.wanghaomiao.xpath.exception.NoSuchAxisException;
+import cn.wanghaomiao.xpath.exception.NoSuchFunctionException;
+import cn.wanghaomiao.xpath.model.JXNode;
+import cn.wanghaomiao.xpath.model.Node;
+import cn.wanghaomiao.xpath.model.Predicate;
+import cn.wanghaomiao.xpath.util.CommonUtil;
+import cn.wanghaomiao.xpath.util.ScopeEm;
 
 /**
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]

@@ -14,10 +14,12 @@ package cn.wanghaomiao.xpath.model;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
 import cn.wanghaomiao.xpath.util.OpEm;
 
 /**
  * xpath语法节点的谓语部分，即要满足的限定条件
+ *
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
  */
 public class Predicate {

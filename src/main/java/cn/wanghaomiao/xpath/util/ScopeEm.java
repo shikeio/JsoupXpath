@@ -14,8 +14,10 @@ package cn.wanghaomiao.xpath.util;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
 /**
  * 筛选作用域
+ *
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
  * @since 14-3-7
  */
@@ -25,9 +27,11 @@ public enum ScopeEm {
     CUR("./"),        //当前节点下
     CURREC(".//");    //当前节点向下递归
     private String val;
-    private ScopeEm(String type){
+
+    private ScopeEm(String type) {
         this.val = type;
     }
+
     public String val() {
         return this.val;
     }

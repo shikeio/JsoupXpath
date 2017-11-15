@@ -14,9 +14,10 @@ package cn.wanghaomiao.xpath.core;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-import cn.wanghaomiao.xpath.model.Node;
 
 import java.util.LinkedList;
+
+import cn.wanghaomiao.xpath.model.Node;
 
 /**
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
@@ -24,8 +25,9 @@ import java.util.LinkedList;
  */
 public class XContext {
     public LinkedList<Node> xpathTr;
-    public XContext(){
-        if (xpathTr==null){
+
+    public XContext() {
+        if (xpathTr == null) {
             xpathTr = new LinkedList<Node>();
         }
     }

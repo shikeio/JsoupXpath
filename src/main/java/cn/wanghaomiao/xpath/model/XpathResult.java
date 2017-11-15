@@ -14,6 +14,7 @@ package cn.wanghaomiao.xpath.model;
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
 /**
  * @author github.com/zhegexiaohuozi [seimimaster@gmail.com]
  * @since 2015/11/29.
